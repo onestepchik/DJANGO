@@ -1,0 +1,14 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+<h2>На данной страницы дублируется контент</h2>
+<h2>{{ flatpage.title }}</h2>
+<hr>
+{{ flatpage.content }}
+<br>
+{{ flatpage.content }}
+{% endblock content%}
